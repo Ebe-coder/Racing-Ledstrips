@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/Pingpongtoren-noPI-upgrade.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=Pingpongtoren-noPI-upgrade.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=pingpongtoren-nopi-upgrade.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/Pingpongtoren_code_17_02.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=Pingpongtoren_code_17_02.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=pingpongtorencode1702/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/pingpongtoren-nopi-upgrade.x/bin
+makeDirectory ${TMPDIR}/pingpongtorencode1702/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/pingpongtoren-nopi-upgrade.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/pingpongtorencode1702.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/pingpongtoren-nopi-upgrade.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/pingpongtorencode1702.tar *
 checkReturnCode
 
 # Cleanup

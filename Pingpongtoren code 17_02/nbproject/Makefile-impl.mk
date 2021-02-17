@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Pingpongtoren-noPI-upgrade.X
+PROJECTNAME=Pingpongtoren code 17_02
 
 # Active Configuration
 DEFAULTCONF=default
